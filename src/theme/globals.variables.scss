@@ -18,13 +18,13 @@ $gray-800:    #343a40 !default;
 $gray-900:    #282828 !default; // Copy text
 $black:       #000000 !default; // Avoid usage
 
-$blue:        #0f6cbf !default;
+$blue:        #1E90FF !default;
 $cyan:        #008196 !default; // Not used.
 $green:       #357a32 !default;
 $red:         #ca3120 !default;
 $yellow:      #f0ad4e !default;
 
-$brand-color: #f98012 !default;
+$brand-color: #00D4FF !default;
 
 $text-color:               $gray-900 !default;
 $text-color-rgb:           color-to-rgb-list($text-color) !default;
@@ -33,7 +33,7 @@ $text-color-dark-rgb:      color-to-rgb-list($text-color-dark) !default;
 
 $background-color:          $white !default;
 $background-color-rgb:      color-to-rgb-list($background-color) !default;
-$background-color-dark:     $gray-900 !default; // #1a1a1a
+$background-color-dark:     #0a0f1a !default;
 $background-color-dark-rgb: color-to-rgb-list($background-color-dark) !default;
 
 $ion-item-background:      $white !default;
