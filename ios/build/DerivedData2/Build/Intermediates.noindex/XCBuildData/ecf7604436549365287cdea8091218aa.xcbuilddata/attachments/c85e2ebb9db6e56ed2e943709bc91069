@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginInappbrowser {
+header "MoodlehqCordovaPluginInappbrowser-Swift.h"
+export *
+}

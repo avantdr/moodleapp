@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginIonicWebview {
+header "MoodlehqCordovaPluginIonicWebview-Swift.h"
+export *
+}

@@ -1,0 +1,4 @@
+module CordovaPluginLocalNotification {
+header "CordovaPluginLocalNotification-Swift.h"
+export *
+}

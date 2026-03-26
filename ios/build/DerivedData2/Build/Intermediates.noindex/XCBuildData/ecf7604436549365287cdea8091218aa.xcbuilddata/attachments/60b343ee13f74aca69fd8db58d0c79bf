@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginIonicKeyboard {
+header "MoodlehqCordovaPluginIonicKeyboard-Swift.h"
+export *
+}

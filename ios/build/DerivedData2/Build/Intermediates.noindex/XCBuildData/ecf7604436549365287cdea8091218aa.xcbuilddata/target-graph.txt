@@ -1,0 +1,147 @@
+Target dependency graph (59 targets)
+Target 'App' in project 'App'
+➜ Explicit dependency on target 'CapApp-SPM' in project 'CapApp-SPM'
+Target 'CapApp-SPM' in project 'CapApp-SPM'
+➜ Explicit dependency on target 'CapApp-SPM' in project 'CapApp-SPM'
+➜ Explicit dependency on target 'Capacitor' in project 'capacitor-swift-pm'
+➜ Explicit dependency on target 'Cordova' in project 'capacitor-swift-pm'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginAdvancedHttp' in project 'MoodlehqCordovaPluginAdvancedHttp'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginCamera' in project 'MoodlehqCordovaPluginCamera'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginFileOpener' in project 'MoodlehqCordovaPluginFileOpener'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginFileTransfer' in project 'MoodlehqCordovaPluginFileTransfer'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginInappbrowser' in project 'MoodlehqCordovaPluginInappbrowser'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginIonicKeyboard' in project 'MoodlehqCordovaPluginIonicKeyboard'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginIonicWebview' in project 'MoodlehqCordovaPluginIonicWebview'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginMediaCapture' in project 'MoodlehqCordovaPluginMediaCapture'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginQrscanner' in project 'MoodlehqCordovaPluginQrscanner'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginStatusbar' in project 'MoodlehqCordovaPluginStatusbar'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginZip' in project 'MoodlehqCordovaPluginZip'
+➜ Explicit dependency on target 'MoodlehqPhonegapPluginPush' in project 'MoodlehqPhonegapPluginPush'
+➜ Explicit dependency on target 'CordovaClipboard' in project 'CordovaClipboard'
+➜ Explicit dependency on target 'CordovaPluginBadge' in project 'CordovaPluginBadge'
+➜ Explicit dependency on target 'CordovaPluginChooser' in project 'CordovaPluginChooser'
+➜ Explicit dependency on target 'CordovaPluginCustomurlscheme' in project 'CordovaPluginCustomurlscheme'
+➜ Explicit dependency on target 'CordovaPluginDevice' in project 'CordovaPluginDevice'
+➜ Explicit dependency on target 'CordovaPluginFile' in project 'CordovaPluginFile'
+➜ Explicit dependency on target 'CordovaPluginLocalNotification' in project 'CordovaPluginLocalNotification'
+➜ Explicit dependency on target 'CordovaPluginNetworkInformation' in project 'CordovaPluginNetworkInformation'
+➜ Explicit dependency on target 'CordovaPluginScreenOrientation' in project 'CordovaPluginScreenOrientation'
+➜ Explicit dependency on target 'CordovaPluginWkuserscript' in project 'CordovaPluginWkuserscript'
+➜ Explicit dependency on target 'CordovaPluginWkwebviewCookies' in project 'CordovaPluginWkwebviewCookies'
+➜ Explicit dependency on target 'CordovaSqliteStorage' in project 'CordovaSqliteStorage'
+➜ Explicit dependency on target 'Nl.kingsquare.cordova.backgroundAudio' in project 'Nl.kingsquare.cordova.backgroundAudio'
+➜ Explicit dependency on target 'CordovaPluginMoodleapp' in project 'CordovaPluginMoodleapp'
+➜ Explicit dependency on target 'Es6PromisePlugin' in project 'Es6PromisePlugin'
+Target 'CapApp-SPM' in project 'CapApp-SPM'
+➜ Explicit dependency on target 'Capacitor' in project 'capacitor-swift-pm'
+➜ Explicit dependency on target 'Cordova' in project 'capacitor-swift-pm'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginAdvancedHttp' in project 'MoodlehqCordovaPluginAdvancedHttp'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginCamera' in project 'MoodlehqCordovaPluginCamera'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginFileOpener' in project 'MoodlehqCordovaPluginFileOpener'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginFileTransfer' in project 'MoodlehqCordovaPluginFileTransfer'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginInappbrowser' in project 'MoodlehqCordovaPluginInappbrowser'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginIonicKeyboard' in project 'MoodlehqCordovaPluginIonicKeyboard'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginIonicWebview' in project 'MoodlehqCordovaPluginIonicWebview'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginMediaCapture' in project 'MoodlehqCordovaPluginMediaCapture'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginQrscanner' in project 'MoodlehqCordovaPluginQrscanner'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginStatusbar' in project 'MoodlehqCordovaPluginStatusbar'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginZip' in project 'MoodlehqCordovaPluginZip'
+➜ Explicit dependency on target 'MoodlehqPhonegapPluginPush' in project 'MoodlehqPhonegapPluginPush'
+➜ Explicit dependency on target 'CordovaClipboard' in project 'CordovaClipboard'
+➜ Explicit dependency on target 'CordovaPluginBadge' in project 'CordovaPluginBadge'
+➜ Explicit dependency on target 'CordovaPluginChooser' in project 'CordovaPluginChooser'
+➜ Explicit dependency on target 'CordovaPluginCustomurlscheme' in project 'CordovaPluginCustomurlscheme'
+➜ Explicit dependency on target 'CordovaPluginDevice' in project 'CordovaPluginDevice'
+➜ Explicit dependency on target 'CordovaPluginFile' in project 'CordovaPluginFile'
+➜ Explicit dependency on target 'CordovaPluginLocalNotification' in project 'CordovaPluginLocalNotification'
+➜ Explicit dependency on target 'CordovaPluginNetworkInformation' in project 'CordovaPluginNetworkInformation'
+➜ Explicit dependency on target 'CordovaPluginScreenOrientation' in project 'CordovaPluginScreenOrientation'
+➜ Explicit dependency on target 'CordovaPluginWkuserscript' in project 'CordovaPluginWkuserscript'
+➜ Explicit dependency on target 'CordovaPluginWkwebviewCookies' in project 'CordovaPluginWkwebviewCookies'
+➜ Explicit dependency on target 'CordovaSqliteStorage' in project 'CordovaSqliteStorage'
+➜ Explicit dependency on target 'Nl.kingsquare.cordova.backgroundAudio' in project 'Nl.kingsquare.cordova.backgroundAudio'
+➜ Explicit dependency on target 'CordovaPluginMoodleapp' in project 'CordovaPluginMoodleapp'
+➜ Explicit dependency on target 'Es6PromisePlugin' in project 'Es6PromisePlugin'
+Target 'Es6PromisePlugin' in project 'Es6PromisePlugin'
+➜ Explicit dependency on target 'Es6PromisePlugin' in project 'Es6PromisePlugin'
+Target 'Es6PromisePlugin' in project 'Es6PromisePlugin' (no dependencies)
+Target 'CordovaPluginMoodleapp' in project 'CordovaPluginMoodleapp'
+➜ Explicit dependency on target 'CordovaPluginMoodleapp' in project 'CordovaPluginMoodleapp'
+Target 'CordovaPluginMoodleapp' in project 'CordovaPluginMoodleapp' (no dependencies)
+Target 'Nl.kingsquare.cordova.backgroundAudio' in project 'Nl.kingsquare.cordova.backgroundAudio'
+➜ Explicit dependency on target 'Nl.kingsquare.cordova.backgroundAudio' in project 'Nl.kingsquare.cordova.backgroundAudio'
+Target 'Nl.kingsquare.cordova.backgroundAudio' in project 'Nl.kingsquare.cordova.backgroundAudio' (no dependencies)
+Target 'CordovaSqliteStorage' in project 'CordovaSqliteStorage'
+➜ Explicit dependency on target 'CordovaSqliteStorage' in project 'CordovaSqliteStorage'
+Target 'CordovaSqliteStorage' in project 'CordovaSqliteStorage' (no dependencies)
+Target 'CordovaPluginWkwebviewCookies' in project 'CordovaPluginWkwebviewCookies'
+➜ Explicit dependency on target 'CordovaPluginWkwebviewCookies' in project 'CordovaPluginWkwebviewCookies'
+Target 'CordovaPluginWkwebviewCookies' in project 'CordovaPluginWkwebviewCookies' (no dependencies)
+Target 'CordovaPluginWkuserscript' in project 'CordovaPluginWkuserscript'
+➜ Explicit dependency on target 'CordovaPluginWkuserscript' in project 'CordovaPluginWkuserscript'
+Target 'CordovaPluginWkuserscript' in project 'CordovaPluginWkuserscript' (no dependencies)
+Target 'CordovaPluginScreenOrientation' in project 'CordovaPluginScreenOrientation'
+➜ Explicit dependency on target 'CordovaPluginScreenOrientation' in project 'CordovaPluginScreenOrientation'
+Target 'CordovaPluginScreenOrientation' in project 'CordovaPluginScreenOrientation' (no dependencies)
+Target 'CordovaPluginNetworkInformation' in project 'CordovaPluginNetworkInformation'
+➜ Explicit dependency on target 'CordovaPluginNetworkInformation' in project 'CordovaPluginNetworkInformation'
+Target 'CordovaPluginNetworkInformation' in project 'CordovaPluginNetworkInformation' (no dependencies)
+Target 'CordovaPluginLocalNotification' in project 'CordovaPluginLocalNotification'
+➜ Explicit dependency on target 'CordovaPluginLocalNotification' in project 'CordovaPluginLocalNotification'
+Target 'CordovaPluginLocalNotification' in project 'CordovaPluginLocalNotification' (no dependencies)
+Target 'CordovaPluginFile' in project 'CordovaPluginFile'
+➜ Explicit dependency on target 'CordovaPluginFile' in project 'CordovaPluginFile'
+Target 'CordovaPluginFile' in project 'CordovaPluginFile' (no dependencies)
+Target 'CordovaPluginDevice' in project 'CordovaPluginDevice'
+➜ Explicit dependency on target 'CordovaPluginDevice' in project 'CordovaPluginDevice'
+Target 'CordovaPluginDevice' in project 'CordovaPluginDevice' (no dependencies)
+Target 'CordovaPluginCustomurlscheme' in project 'CordovaPluginCustomurlscheme'
+➜ Explicit dependency on target 'CordovaPluginCustomurlscheme' in project 'CordovaPluginCustomurlscheme'
+Target 'CordovaPluginCustomurlscheme' in project 'CordovaPluginCustomurlscheme' (no dependencies)
+Target 'CordovaPluginChooser' in project 'CordovaPluginChooser'
+➜ Explicit dependency on target 'CordovaPluginChooser' in project 'CordovaPluginChooser'
+Target 'CordovaPluginChooser' in project 'CordovaPluginChooser' (no dependencies)
+Target 'CordovaPluginBadge' in project 'CordovaPluginBadge'
+➜ Explicit dependency on target 'CordovaPluginBadge' in project 'CordovaPluginBadge'
+Target 'CordovaPluginBadge' in project 'CordovaPluginBadge' (no dependencies)
+Target 'CordovaClipboard' in project 'CordovaClipboard'
+➜ Explicit dependency on target 'CordovaClipboard' in project 'CordovaClipboard'
+Target 'CordovaClipboard' in project 'CordovaClipboard' (no dependencies)
+Target 'MoodlehqPhonegapPluginPush' in project 'MoodlehqPhonegapPluginPush'
+➜ Explicit dependency on target 'MoodlehqPhonegapPluginPush' in project 'MoodlehqPhonegapPluginPush'
+Target 'MoodlehqPhonegapPluginPush' in project 'MoodlehqPhonegapPluginPush' (no dependencies)
+Target 'MoodlehqCordovaPluginZip' in project 'MoodlehqCordovaPluginZip'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginZip' in project 'MoodlehqCordovaPluginZip'
+Target 'MoodlehqCordovaPluginZip' in project 'MoodlehqCordovaPluginZip' (no dependencies)
+Target 'MoodlehqCordovaPluginStatusbar' in project 'MoodlehqCordovaPluginStatusbar'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginStatusbar' in project 'MoodlehqCordovaPluginStatusbar'
+Target 'MoodlehqCordovaPluginStatusbar' in project 'MoodlehqCordovaPluginStatusbar' (no dependencies)
+Target 'MoodlehqCordovaPluginQrscanner' in project 'MoodlehqCordovaPluginQrscanner'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginQrscanner' in project 'MoodlehqCordovaPluginQrscanner'
+Target 'MoodlehqCordovaPluginQrscanner' in project 'MoodlehqCordovaPluginQrscanner' (no dependencies)
+Target 'MoodlehqCordovaPluginMediaCapture' in project 'MoodlehqCordovaPluginMediaCapture'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginMediaCapture' in project 'MoodlehqCordovaPluginMediaCapture'
+Target 'MoodlehqCordovaPluginMediaCapture' in project 'MoodlehqCordovaPluginMediaCapture' (no dependencies)
+Target 'MoodlehqCordovaPluginIonicWebview' in project 'MoodlehqCordovaPluginIonicWebview'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginIonicWebview' in project 'MoodlehqCordovaPluginIonicWebview'
+Target 'MoodlehqCordovaPluginIonicWebview' in project 'MoodlehqCordovaPluginIonicWebview' (no dependencies)
+Target 'MoodlehqCordovaPluginIonicKeyboard' in project 'MoodlehqCordovaPluginIonicKeyboard'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginIonicKeyboard' in project 'MoodlehqCordovaPluginIonicKeyboard'
+Target 'MoodlehqCordovaPluginIonicKeyboard' in project 'MoodlehqCordovaPluginIonicKeyboard' (no dependencies)
+Target 'MoodlehqCordovaPluginInappbrowser' in project 'MoodlehqCordovaPluginInappbrowser'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginInappbrowser' in project 'MoodlehqCordovaPluginInappbrowser'
+Target 'MoodlehqCordovaPluginInappbrowser' in project 'MoodlehqCordovaPluginInappbrowser' (no dependencies)
+Target 'MoodlehqCordovaPluginFileTransfer' in project 'MoodlehqCordovaPluginFileTransfer'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginFileTransfer' in project 'MoodlehqCordovaPluginFileTransfer'
+Target 'MoodlehqCordovaPluginFileTransfer' in project 'MoodlehqCordovaPluginFileTransfer' (no dependencies)
+Target 'MoodlehqCordovaPluginFileOpener' in project 'MoodlehqCordovaPluginFileOpener'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginFileOpener' in project 'MoodlehqCordovaPluginFileOpener'
+Target 'MoodlehqCordovaPluginFileOpener' in project 'MoodlehqCordovaPluginFileOpener' (no dependencies)
+Target 'MoodlehqCordovaPluginCamera' in project 'MoodlehqCordovaPluginCamera'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginCamera' in project 'MoodlehqCordovaPluginCamera'
+Target 'MoodlehqCordovaPluginCamera' in project 'MoodlehqCordovaPluginCamera' (no dependencies)
+Target 'MoodlehqCordovaPluginAdvancedHttp' in project 'MoodlehqCordovaPluginAdvancedHttp'
+➜ Explicit dependency on target 'MoodlehqCordovaPluginAdvancedHttp' in project 'MoodlehqCordovaPluginAdvancedHttp'
+Target 'MoodlehqCordovaPluginAdvancedHttp' in project 'MoodlehqCordovaPluginAdvancedHttp' (no dependencies)
+Target 'Cordova' in project 'capacitor-swift-pm' (no dependencies)
+Target 'Capacitor' in project 'capacitor-swift-pm' (no dependencies)

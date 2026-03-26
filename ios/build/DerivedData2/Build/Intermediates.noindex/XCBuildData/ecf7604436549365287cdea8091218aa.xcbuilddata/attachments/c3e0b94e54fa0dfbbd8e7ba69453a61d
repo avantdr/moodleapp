@@ -1,0 +1,4 @@
+module CordovaPluginWkwebviewCookies {
+header "CordovaPluginWkwebviewCookies-Swift.h"
+export *
+}

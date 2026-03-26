@@ -1,0 +1,4 @@
+module MoodlehqPhonegapPluginPush {
+header "MoodlehqPhonegapPluginPush-Swift.h"
+export *
+}

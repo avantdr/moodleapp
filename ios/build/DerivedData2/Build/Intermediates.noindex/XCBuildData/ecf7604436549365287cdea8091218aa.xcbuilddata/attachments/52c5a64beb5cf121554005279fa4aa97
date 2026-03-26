@@ -1,0 +1,4 @@
+module CordovaPluginBadge {
+header "CordovaPluginBadge-Swift.h"
+export *
+}

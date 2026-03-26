@@ -1,0 +1,4 @@
+module CordovaPluginNetworkInformation {
+header "CordovaPluginNetworkInformation-Swift.h"
+export *
+}

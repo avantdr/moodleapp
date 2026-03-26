@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginFileOpener {
+header "MoodlehqCordovaPluginFileOpener-Swift.h"
+export *
+}

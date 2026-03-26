@@ -1,0 +1,4 @@
+module CordovaPluginChooser {
+header "CordovaPluginChooser-Swift.h"
+export *
+}

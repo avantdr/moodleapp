@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/CordovaPluginLocalNotification-primary.dia",
+    "emit-module-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/CordovaPluginLocalNotification-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/CordovaPluginLocalNotification-primary-emit-module.dia",
+    "pch" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/CordovaPluginLocalNotification-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/CordovaPluginLocalNotification-primary.swiftdeps"
+  },
+  "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginLocalNotification/Sources/CordovaPluginLocalNotification/Dummy.swift" : {
+    "const-values" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy.swiftconstvalues",
+    "dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy.d",
+    "diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy.dia",
+    "index-unit-output-path" : "/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy.o",
+    "llvm-bc" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy.bc",
+    "object" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy.o",
+    "swift-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy.swiftdeps",
+    "swiftmodule" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginLocalNotification.build/Debug-iphonesimulator/CordovaPluginLocalNotification.build/Objects-normal/arm64/Dummy~partial.swiftmodule"
+  }
+}

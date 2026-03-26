@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginMediaCapture {
+header "MoodlehqCordovaPluginMediaCapture-Swift.h"
+export *
+}

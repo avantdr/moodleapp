@@ -1,0 +1,4 @@
+module CordovaClipboard {
+header "CordovaClipboard-Swift.h"
+export *
+}

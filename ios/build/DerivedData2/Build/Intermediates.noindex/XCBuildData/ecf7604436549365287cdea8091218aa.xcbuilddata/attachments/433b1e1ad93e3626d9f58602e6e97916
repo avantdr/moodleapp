@@ -1,0 +1,4 @@
+module CordovaPluginDevice {
+header "CordovaPluginDevice-Swift.h"
+export *
+}

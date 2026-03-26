@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Nl.kingsquare.cordova.backgroundAudio-primary.dia",
+    "emit-module-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Nl.kingsquare.cordova.backgroundAudio-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Nl.kingsquare.cordova.backgroundAudio-primary-emit-module.dia",
+    "pch" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Nl.kingsquare.cordova.backgroundAudio-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Nl.kingsquare.cordova.backgroundAudio-primary.swiftdeps"
+  },
+  "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/Nl.kingsquare.cordova.backgroundAudio/Sources/Nl.kingsquare.cordova.backgroundAudio/Dummy.swift" : {
+    "const-values" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy.swiftconstvalues",
+    "dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy.d",
+    "diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy.dia",
+    "index-unit-output-path" : "/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy.o",
+    "llvm-bc" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy.bc",
+    "object" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy.o",
+    "swift-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy.swiftdeps",
+    "swiftmodule" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/Nl.kingsquare.cordova.backgroundAudio.build/Debug-iphonesimulator/Nl.kingsquare.cordova.backgroundAudio.build/Objects-normal/x86_64/Dummy~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,4 @@
+module CordovaPluginMoodleapp {
+header "CordovaPluginMoodleapp-Swift.h"
+export *
+}

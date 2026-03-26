@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginQrscanner {
+header "MoodlehqCordovaPluginQrscanner-Swift.h"
+export *
+}

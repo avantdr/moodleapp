@@ -1,0 +1,461 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "capacitor-swift-pm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/ionic-team/capacitor-swift-pm.git",
+          "name" : "capacitor-swift-pm"
+        },
+        "path" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/SourcePackages/artifacts/capacitor-swift-pm/Cordova/Cordova.xcframework",
+        "source" : {
+          "checksum" : "ba4b2d01c60195d73131e8e0e661faef75564725b8499812fb13433282b6201e",
+          "type" : "remote",
+          "url" : "https://github.com/ionic-team/capacitor-swift-pm/releases/download/8.3.0/Cordova.xcframework.zip"
+        },
+        "targetName" : "Cordova"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "capacitor-swift-pm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/ionic-team/capacitor-swift-pm.git",
+          "name" : "capacitor-swift-pm"
+        },
+        "path" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/SourcePackages/artifacts/capacitor-swift-pm/Capacitor/Capacitor.xcframework",
+        "source" : {
+          "checksum" : "8c3d73ba5986f0163c1bde0784255acda39f53e7488b483be9c3e9d9624363f0",
+          "type" : "remote",
+          "url" : "https://github.com/ionic-team/capacitor-swift-pm/releases/download/8.3.0/Capacitor.xcframework.zip"
+        },
+        "targetName" : "Capacitor"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "capacitor-swift-pm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/ionic-team/capacitor-swift-pm.git",
+          "name" : "capacitor-swift-pm"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "6a2a3feb25fda8df2a284d0818bc9c83e57a7d56",
+            "version" : "8.3.0"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "capacitor-swift-pm"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "capapp-spm",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/App/CapApp-SPM",
+          "name" : "CapApp-SPM"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/App/CapApp-SPM"
+        },
+        "subpath" : "capapp-spm"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovaclipboard",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaClipboard",
+          "name" : "CordovaClipboard"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaClipboard"
+        },
+        "subpath" : "cordovaclipboard"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginbadge",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginBadge",
+          "name" : "CordovaPluginBadge"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginBadge"
+        },
+        "subpath" : "cordovapluginbadge"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginchooser",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginChooser",
+          "name" : "CordovaPluginChooser"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginChooser"
+        },
+        "subpath" : "cordovapluginchooser"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovaplugincustomurlscheme",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginCustomurlscheme",
+          "name" : "CordovaPluginCustomurlscheme"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginCustomurlscheme"
+        },
+        "subpath" : "cordovaplugincustomurlscheme"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovaplugindevice",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginDevice",
+          "name" : "CordovaPluginDevice"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginDevice"
+        },
+        "subpath" : "cordovaplugindevice"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginfile",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginFile",
+          "name" : "CordovaPluginFile"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginFile"
+        },
+        "subpath" : "cordovapluginfile"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginlocalnotification",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginLocalNotification",
+          "name" : "CordovaPluginLocalNotification"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginLocalNotification"
+        },
+        "subpath" : "cordovapluginlocalnotification"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginmoodleapp",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginMoodleapp",
+          "name" : "CordovaPluginMoodleapp"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginMoodleapp"
+        },
+        "subpath" : "cordovapluginmoodleapp"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginnetworkinformation",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginNetworkInformation",
+          "name" : "CordovaPluginNetworkInformation"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginNetworkInformation"
+        },
+        "subpath" : "cordovapluginnetworkinformation"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginscreenorientation",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginScreenOrientation",
+          "name" : "CordovaPluginScreenOrientation"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginScreenOrientation"
+        },
+        "subpath" : "cordovapluginscreenorientation"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginwkuserscript",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginWkuserscript",
+          "name" : "CordovaPluginWkuserscript"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginWkuserscript"
+        },
+        "subpath" : "cordovapluginwkuserscript"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovapluginwkwebviewcookies",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginWkwebviewCookies",
+          "name" : "CordovaPluginWkwebviewCookies"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginWkwebviewCookies"
+        },
+        "subpath" : "cordovapluginwkwebviewcookies"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "cordovasqlitestorage",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaSqliteStorage",
+          "name" : "CordovaSqliteStorage"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaSqliteStorage"
+        },
+        "subpath" : "cordovasqlitestorage"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "es6promiseplugin",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/Es6PromisePlugin",
+          "name" : "Es6PromisePlugin"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/Es6PromisePlugin"
+        },
+        "subpath" : "es6promiseplugin"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginadvancedhttp",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginAdvancedHttp",
+          "name" : "MoodlehqCordovaPluginAdvancedHttp"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginAdvancedHttp"
+        },
+        "subpath" : "moodlehqcordovapluginadvancedhttp"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovaplugincamera",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginCamera",
+          "name" : "MoodlehqCordovaPluginCamera"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginCamera"
+        },
+        "subpath" : "moodlehqcordovaplugincamera"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginfileopener",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginFileOpener",
+          "name" : "MoodlehqCordovaPluginFileOpener"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginFileOpener"
+        },
+        "subpath" : "moodlehqcordovapluginfileopener"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginfiletransfer",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginFileTransfer",
+          "name" : "MoodlehqCordovaPluginFileTransfer"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginFileTransfer"
+        },
+        "subpath" : "moodlehqcordovapluginfiletransfer"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovaplugininappbrowser",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginInappbrowser",
+          "name" : "MoodlehqCordovaPluginInappbrowser"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginInappbrowser"
+        },
+        "subpath" : "moodlehqcordovaplugininappbrowser"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginionickeyboard",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginIonicKeyboard",
+          "name" : "MoodlehqCordovaPluginIonicKeyboard"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginIonicKeyboard"
+        },
+        "subpath" : "moodlehqcordovapluginionickeyboard"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginionicwebview",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginIonicWebview",
+          "name" : "MoodlehqCordovaPluginIonicWebview"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginIonicWebview"
+        },
+        "subpath" : "moodlehqcordovapluginionicwebview"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginmediacapture",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginMediaCapture",
+          "name" : "MoodlehqCordovaPluginMediaCapture"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginMediaCapture"
+        },
+        "subpath" : "moodlehqcordovapluginmediacapture"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginqrscanner",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginQrscanner",
+          "name" : "MoodlehqCordovaPluginQrscanner"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginQrscanner"
+        },
+        "subpath" : "moodlehqcordovapluginqrscanner"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginstatusbar",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginStatusbar",
+          "name" : "MoodlehqCordovaPluginStatusbar"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginStatusbar"
+        },
+        "subpath" : "moodlehqcordovapluginstatusbar"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqcordovapluginzip",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginZip",
+          "name" : "MoodlehqCordovaPluginZip"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqCordovaPluginZip"
+        },
+        "subpath" : "moodlehqcordovapluginzip"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "moodlehqphonegappluginpush",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqPhonegapPluginPush",
+          "name" : "MoodlehqPhonegapPluginPush"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/MoodlehqPhonegapPluginPush"
+        },
+        "subpath" : "moodlehqphonegappluginpush"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "nl.kingsquare.cordova.backgroundaudio",
+          "kind" : "fileSystem",
+          "location" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/Nl.kingsquare.cordova.backgroundAudio",
+          "name" : "Nl.kingsquare.cordova.backgroundAudio"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/Nl.kingsquare.cordova.backgroundAudio"
+        },
+        "subpath" : "nl.kingsquare.cordova.backgroundaudio"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

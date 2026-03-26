@@ -1,0 +1,4 @@
+module CordovaPluginFile {
+header "CordovaPluginFile-Swift.h"
+export *
+}

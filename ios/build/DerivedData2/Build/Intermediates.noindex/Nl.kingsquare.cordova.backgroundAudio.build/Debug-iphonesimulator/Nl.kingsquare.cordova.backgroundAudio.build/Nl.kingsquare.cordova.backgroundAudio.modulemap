@@ -1,0 +1,4 @@
+module Nl_kingsquare_cordova_backgroundAudio {
+header "Nl.kingsquare.cordova.backgroundAudio-Swift.h"
+export *
+}

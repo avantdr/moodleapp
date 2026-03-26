@@ -1,0 +1,4 @@
+module Es6PromisePlugin {
+header "Es6PromisePlugin-Swift.h"
+export *
+}

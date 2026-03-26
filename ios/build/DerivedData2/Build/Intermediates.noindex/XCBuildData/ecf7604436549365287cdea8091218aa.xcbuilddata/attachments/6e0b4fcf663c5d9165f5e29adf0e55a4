@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginFileTransfer {
+header "MoodlehqCordovaPluginFileTransfer-Swift.h"
+export *
+}

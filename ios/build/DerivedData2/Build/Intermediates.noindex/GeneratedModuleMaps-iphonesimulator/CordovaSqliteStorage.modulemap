@@ -1,0 +1,4 @@
+module CordovaSqliteStorage {
+header "CordovaSqliteStorage-Swift.h"
+export *
+}

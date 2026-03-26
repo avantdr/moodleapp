@@ -1,0 +1,4 @@
+module CordovaPluginCustomurlscheme {
+header "CordovaPluginCustomurlscheme-Swift.h"
+export *
+}

@@ -1,0 +1,4 @@
+module CordovaPluginWkuserscript {
+header "CordovaPluginWkuserscript-Swift.h"
+export *
+}

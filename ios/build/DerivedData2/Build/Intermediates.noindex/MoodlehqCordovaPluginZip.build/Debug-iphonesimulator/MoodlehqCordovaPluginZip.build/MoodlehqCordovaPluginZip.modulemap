@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginZip {
+header "MoodlehqCordovaPluginZip-Swift.h"
+export *
+}

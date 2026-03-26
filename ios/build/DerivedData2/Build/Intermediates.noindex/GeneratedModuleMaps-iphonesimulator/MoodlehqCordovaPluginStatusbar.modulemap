@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginStatusbar {
+header "MoodlehqCordovaPluginStatusbar-Swift.h"
+export *
+}

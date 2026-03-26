@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginAdvancedHttp {
+header "MoodlehqCordovaPluginAdvancedHttp-Swift.h"
+export *
+}

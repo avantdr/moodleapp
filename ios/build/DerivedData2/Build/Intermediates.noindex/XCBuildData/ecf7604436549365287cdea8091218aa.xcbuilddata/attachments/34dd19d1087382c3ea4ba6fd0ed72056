@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/CordovaPluginScreenOrientation-primary.dia",
+    "emit-module-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/CordovaPluginScreenOrientation-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/CordovaPluginScreenOrientation-primary-emit-module.dia",
+    "pch" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/CordovaPluginScreenOrientation-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/CordovaPluginScreenOrientation-primary.swiftdeps"
+  },
+  "/Users/paolo/Documents/digiage-app/ios/capacitor-cordova-ios-plugins/sources/CordovaPluginScreenOrientation/Sources/CordovaPluginScreenOrientation/Dummy.swift" : {
+    "const-values" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy.swiftconstvalues",
+    "dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy.d",
+    "diagnostics" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy.dia",
+    "index-unit-output-path" : "/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy.o",
+    "llvm-bc" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy.bc",
+    "object" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy.o",
+    "swift-dependencies" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy.swiftdeps",
+    "swiftmodule" : "/Users/paolo/Documents/digiage-app/ios/build/DerivedData2/Build/Intermediates.noindex/CordovaPluginScreenOrientation.build/Debug-iphonesimulator/CordovaPluginScreenOrientation.build/Objects-normal/arm64/Dummy~partial.swiftmodule"
+  }
+}

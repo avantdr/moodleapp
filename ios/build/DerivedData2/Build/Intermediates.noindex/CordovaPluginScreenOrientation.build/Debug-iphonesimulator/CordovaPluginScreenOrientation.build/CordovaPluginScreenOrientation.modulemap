@@ -1,0 +1,4 @@
+module CordovaPluginScreenOrientation {
+header "CordovaPluginScreenOrientation-Swift.h"
+export *
+}

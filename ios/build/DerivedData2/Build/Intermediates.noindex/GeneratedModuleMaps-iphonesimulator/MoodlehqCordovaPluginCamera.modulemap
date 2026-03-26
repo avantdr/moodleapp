@@ -1,0 +1,4 @@
+module MoodlehqCordovaPluginCamera {
+header "MoodlehqCordovaPluginCamera-Swift.h"
+export *
+}
