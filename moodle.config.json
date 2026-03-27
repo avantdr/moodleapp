@@ -1,7 +1,7 @@
 {
     "app_id": "com.moodle.moodlemobile",
     "appname": "DIGIAGE",
-    "siteurl": "https://versity.digiage.pro",
+    "siteurl": "https://www.versity.digiage.pro",
     "sitename": "DIGIAGE",
     "versioncode": 52000,
     "versionname": "5.2.0",
@@ -92,7 +92,7 @@
     "sites": [
         {
             "name": "DIGIAGE",
-            "url": "https://versity.digiage.pro"
+            "url": "https://www.versity.digiage.pro"
         }
     ],
     "multisitesdisplay": "",

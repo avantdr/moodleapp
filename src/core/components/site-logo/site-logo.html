@@ -1,11 +1,17 @@
 @if (showLogo && logoLoaded) {
     <div class="core-logo-container">
-        @if (siteLogo) {
-            <img [url]="siteLogo" class="core-logo" [alt]="'core.login.logoof' | translate: { $a: siteName }" core-external-content
-                [siteId]="siteId" (onLoad)="imageLoaded($event)" [hidden]="logoError">
-        }
-        @if (!siteLogo || logoError) {
-            <img [src]="fallbackLogo" class="core-logo core-logo-fallback" [alt]="'core.login.logoof' | translate: { $a: appName }">
+        @if (logoType === 'login') {
+            <!-- Branded app: never load remote Moodle theme logo on login flows (credentials, reconnect, menu). -->
+            <img src="/assets/img/logo_digiage.png" class="core-logo core-logo-fallback core-logo-digiage-login"
+                [alt]="'core.login.logoof' | translate: { $a: appName }" decoding="async">
+        } @else {
+            @if (siteLogo) {
+                <img [url]="siteLogo" class="core-logo" [alt]="'core.login.logoof' | translate: { $a: siteName }" core-external-content
+                    [siteId]="siteId" (onLoad)="imageLoaded($event)" [hidden]="logoError">
+            }
+            @if (!siteLogo || logoError) {
+                <img [src]="fallbackLogo" class="core-logo core-logo-fallback" [alt]="'core.login.logoof' | translate: { $a: appName }">
+            }
         }
     </div>
 }

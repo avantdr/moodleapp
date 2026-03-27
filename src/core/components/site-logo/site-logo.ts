@@ -66,7 +66,7 @@ export class CoreSiteLogoComponent implements OnInit, OnDestroy {
             await this.loadInfo();
         }, this.siteId);
 
-        this.fallbackLogo = this.logoType === 'top' ? 'assets/img/top_logo.png' : 'assets/img/login_logo.png';
+        this.fallbackLogo = this.logoType === 'top' ? 'assets/img/top_logo.png' : 'assets/img/logo_digiage.png';
         this.showSiteName = this.logoType !== 'top';
 
         await this.loadInfo();
@@ -115,13 +115,14 @@ export class CoreSiteLogoComponent implements OnInit, OnDestroy {
 
         if (this.logoType === 'top' && site.getShowTopLogo() === 'hidden') {
             this.showLogo = false;
-        } else {
+        } else if (this.logoType === 'top') {
             // Get the public config to avoid race conditions when retrieving the logo.
             const siteConfig = await CorePromiseUtils.ignoreErrors(site.getPublicConfig());
 
-            this.siteLogo = this.logoType === 'top'
-                ? site.getTopLogoUrl(siteConfig)
-                : site.getLogoUrl(siteConfig);
+            this.siteLogo = site.getTopLogoUrl(siteConfig);
+        } else {
+            // Login (and similar) screens: use bundled app branding, not the remote Moodle theme logo.
+            this.siteLogo = undefined;
         }
 
         this.logoLoaded = true;

@@ -17,8 +17,9 @@
 </ion-header>
 <ion-content class="ion-padding">
     <div class="list-item-limited-width">
-        <div class="ion-text-center ion-padding ion-margin-bottom core-login-site-logo" [class.hidden]="hasSites || enteredSiteUrl">
-            <img src="assets/img/logo_digiage.png" class="avatar-full login-logo" [alt]="'core.login.logoof' | translate: { $a: appName }">
+        <div class="ion-text-center ion-padding ion-margin-bottom core-login-site-logo">
+            <img src="/assets/img/logo_digiage.png" class="core-login-digiage-logo" width="240" height="80"
+                [alt]="'core.login.logoof' | translate: { $a: appName }" decoding="async">
         </div>
         @if (!fixedSites && siteForm) {
             <form [formGroup]="siteForm" (ngSubmit)="connect(siteForm.value.siteUrl, $event)" #siteFormEl>
