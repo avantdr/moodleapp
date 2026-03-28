@@ -1377,18 +1377,10 @@ export class CoreCourseProvider {
                     await formatLoadPromise;
                 }
 
-                // Handlers may not be registered until all site plugins have loaded.
-                if (CoreSitePlugins.sitePluginsFinishedLoading) {
-                    await CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions);
-                } else {
-                    await new Promise<void>((resolve, reject) => {
-                        const observer = CoreEvents.on(CoreEvents.SITE_PLUGINS_LOADED, () => {
-                            observer?.off();
-
-                            CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions).then(resolve).catch(reject);
-                        });
-                    });
-                }
+                // waitFetchPlugins() above means login-time loadSitePlugins() has finished, so delegates are registered.
+                // Do not wait on SITE_PLUGINS_LOADED here: that event may have fired before CoreSitePlugins subscribed to it
+                // (sitePluginsFinishedLoading stays false), and the event will not fire again — that caused an infinite spinner.
+                await CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions);
             } catch (error) {
                 // e.g. plugin init failed (downloads, etc.) — still open the course with the core default format UI.
                 this.logger.warn('Course format site plugin failed to load; opening default course view.', error);

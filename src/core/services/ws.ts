@@ -46,6 +46,7 @@ import { CoreErrorLogs } from '@static/error-logs';
 import { CoreErrorHelper, CoreErrorObject } from './error-helper';
 import { CoreDom } from '@static/dom';
 import { CoreUserNullSupportConfig } from '@features/user/classes/support/null-support-config';
+import { isCordovaAdvancedHttpAvailable } from '@/core/utils/cordova-advanced-http';
 
 /**
  * This service allows performing WS calls and download/upload files.
@@ -1182,7 +1183,7 @@ export class CoreWSProvider {
     }
 
     /**
-     * Send an HTTP request. In mobile devices it will use the cordova plugin.
+     * Send an HTTP request. On mobile, uses Cordova Advanced HTTP when available; otherwise Angular HttpClient (fetch/XHR).
      *
      * @param url URL of the request.
      * @param options Options for the request.
@@ -1193,8 +1194,9 @@ export class CoreWSProvider {
         options.responseType = options.responseType || 'json';
         options.timeout = options.timeout === undefined ? this.getRequestTimeout() : options.timeout;
 
+        const useCordovaHttp = CorePlatform.isMobile() && isCordovaAdvancedHttpAvailable();
+
         if (CorePlatform.isMobile()) {
-            // Use the cordova plugin.
             if (url.indexOf('file://') === 0) {
                 // We cannot load local files using the http native plugin. Use file provider instead.
                 const content = options.responseType == 'json' ?
@@ -1208,6 +1210,10 @@ export class CoreWSProvider {
                     statusText: 'OK',
                     url,
                 });
+            }
+
+            if (!useCordovaHttp) {
+                return this.sendHTTPRequestWithAngularClient<T>(url, options);
             }
 
             let response: NativeHttpResponse;
@@ -1235,55 +1241,61 @@ export class CoreWSProvider {
             } while (redirectUrl);
 
             return new CoreNativeToAngularHttpResponse(response);
-        } else {
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            let observable: Observable<HttpResponse<any>>;
-            const angularOptions = <AngularHttpRequestOptions> options;
-
-            // Use Angular's library.
-            switch (angularOptions.method) {
-                case 'get':
-                    observable = Http.get(url, {
-                        headers: angularOptions.headers,
-                        params: angularOptions.params,
-                        observe: 'response',
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        responseType: <any> angularOptions.responseType,
-                    });
-                    break;
-
-                case 'post':
-                    if (angularOptions.serializer == 'json') {
-                        angularOptions.data = JSON.stringify(angularOptions.data);
-                    }
-
-                    observable = Http.post(url, angularOptions.data, {
-                        headers: angularOptions.headers,
-                        observe: 'response',
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        responseType: <any> angularOptions.responseType,
-                    });
-                    break;
-
-                case 'head':
-                    observable = Http.head(url, {
-                        headers: angularOptions.headers,
-                        observe: 'response',
-                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                        responseType: <any> angularOptions.responseType,
-                    });
-                    break;
-
-                default:
-                    throw new CoreError('Method not implemented yet.');
-            }
-
-            if (angularOptions.timeout) {
-                observable = observable.pipe(timeout(angularOptions.timeout));
-            }
-
-            return await firstValueFrom(observable);
         }
+
+        return this.sendHTTPRequestWithAngularClient<T>(url, options);
+    }
+
+    /**
+     * Perform HTTP via Angular HttpClient (browser fetch/XHR stack). Used on desktop and on mobile when Cordova Advanced HTTP is stubbed.
+     */
+    protected async sendHTTPRequestWithAngularClient<T = unknown>(url: string, options: HttpRequestOptions): Promise<HttpResponse<T>> {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        let observable: Observable<HttpResponse<any>>;
+        const angularOptions = <AngularHttpRequestOptions> options;
+
+        switch (angularOptions.method) {
+            case 'get':
+                observable = Http.get(url, {
+                    headers: angularOptions.headers,
+                    params: angularOptions.params,
+                    observe: 'response',
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    responseType: <any> angularOptions.responseType,
+                });
+                break;
+
+            case 'post':
+                if (angularOptions.serializer == 'json') {
+                    angularOptions.data = JSON.stringify(angularOptions.data);
+                }
+
+                observable = Http.post(url, angularOptions.data, {
+                    headers: angularOptions.headers,
+                    observe: 'response',
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    responseType: <any> angularOptions.responseType,
+                });
+                break;
+
+            case 'head':
+                observable = Http.head(url, {
+                    headers: angularOptions.headers,
+                    observe: 'response',
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    responseType: <any> angularOptions.responseType,
+                });
+                break;
+
+            default:
+                throw new CoreError('Method not implemented yet.');
+        }
+
+        if (angularOptions.timeout) {
+            observable = observable.pipe(timeout(angularOptions.timeout));
+        }
+
+        return await firstValueFrom(observable);
     }
 
     /**

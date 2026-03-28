@@ -12,24 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { CorePlatform } from '@services/platform';
-import { NativeHttp } from '@singletons';
-import { isCordovaAdvancedHttpAvailable } from '@/core/utils/cordova-advanced-http';
-
 /**
- * This function sets the User-Agent header using NativeHttp for mobile platform.
+ * True when the real Cordova Advanced HTTP plugin is present (not an empty SPM stub).
+ * Stubs omit the JS bridge, so `sendRequest` is missing and Ionic Native would report "plugin not installed".
  */
-export default async function(): Promise<void> {
-    if (!CorePlatform.isMobile()) {
-        return;
-    }
+export function isCordovaAdvancedHttpAvailable(): boolean {
+    const http = (window as { cordova?: { plugin?: { http?: { sendRequest?: unknown } } } }).cordova?.plugin?.http;
 
-    await CorePlatform.ready();
-
-    if (!isCordovaAdvancedHttpAvailable()) {
-        return;
-    }
-
-    NativeHttp.setHeader('*', 'User-Agent', navigator.userAgent);
-    NativeHttp.setServerTrustMode('legacy');
+    return typeof http?.sendRequest === 'function';
 }
