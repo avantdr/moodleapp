@@ -1317,7 +1317,8 @@ export class CoreCourseProvider {
     /**
      * Wait for any course format plugin to load, and open the course page.
      *
-     * If the plugin's promise is resolved, the course page will be opened. If it is rejected, they will see an error.
+     * If the plugin's promise is resolved, the course page will be opened. If it is rejected, the course opens with the
+     * default core format UI instead of forcing a full reload.
      * If the promise for the plugin is still in progress when the user tries to open the course, a loader
      * will be displayed until it is complete, before the course page is opened. If the promise is already complete,
      * they will see the result immediately.
@@ -1343,52 +1344,56 @@ export class CoreCourseProvider {
 
         const loading = await CoreLoadings.show();
 
-        // Wait for site plugins to be fetched.
-        await CorePromiseUtils.ignoreErrors(CoreSitePlugins.waitFetchPlugins());
-
-        if (!('format' in course) || course.format === undefined) {
-            const result = await CoreCourseHelper.getCourse(course.id);
-
-            course = result.course;
-        }
-
-        const format = 'format' in course && `format_${course.format}`;
-
-        if (!format || !CoreSitePlugins.sitePluginPromiseExists(`format_${format}`)) {
-            // No custom format plugin. We don't need to wait for anything.
-            loading.dismiss();
-            await CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions);
-
-            return;
-        }
-
-        // This course uses a custom format plugin, wait for the format plugin to finish loading.
         try {
-            await CoreSitePlugins.sitePluginLoaded(format);
+            // Wait for site plugins to be fetched.
+            await CorePromiseUtils.ignoreErrors(CoreSitePlugins.waitFetchPlugins());
 
-            // The format loaded successfully, but the handlers wont be registered until all site plugins have loaded.
-            if (CoreSitePlugins.sitePluginsFinishedLoading) {
-                return CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions);
+            try {
+                if (!('format' in course) || course.format === undefined) {
+                    const result = await CoreCourseHelper.getCourse(course.id);
+
+                    course = result.course;
+                }
+            } catch (error) {
+                CoreAlerts.showError(error);
+
+                return;
             }
 
-            // Wait for plugins to be loaded.
-            await new Promise((resolve, reject) => {
-                const observer = CoreEvents.on(CoreEvents.SITE_PLUGINS_LOADED, () => {
-                    observer?.off();
+            // Component keys are e.g. "format_topics" (see registerSitePluginPromise(plugin.component)).
+            const format = 'format' in course && `format_${course.format}`;
 
-                    CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions).then(resolve).catch(reject);
-                });
-            });
+            if (!format || !CoreSitePlugins.sitePluginPromiseExists(format)) {
+                // No custom format plugin registered for this course format, or unknown format.
+                await CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions);
 
-            return;
-        } catch {
-            // The site plugin failed to load. The user needs to restart the app to try loading it again.
-            await CoreAlerts.confirm(Translate.instant('core.courses.errorloadplugins'), {
-                okText: Translate.instant('core.courses.reload'),
-                cancelText: Translate.instant('core.courses.ignore'),
-            });
+                return;
+            }
 
-            window.location.reload();
+            // This course has a site plugin for its format; wait for it, then open (or fall back to default view).
+            try {
+                const formatLoadPromise = CoreSitePlugins.sitePluginLoaded(format);
+                if (formatLoadPromise) {
+                    await formatLoadPromise;
+                }
+
+                // Handlers may not be registered until all site plugins have loaded.
+                if (CoreSitePlugins.sitePluginsFinishedLoading) {
+                    await CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions);
+                } else {
+                    await new Promise<void>((resolve, reject) => {
+                        const observer = CoreEvents.on(CoreEvents.SITE_PLUGINS_LOADED, () => {
+                            observer?.off();
+
+                            CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions).then(resolve).catch(reject);
+                        });
+                    });
+                }
+            } catch (error) {
+                // e.g. plugin init failed (downloads, etc.) — still open the course with the core default format UI.
+                this.logger.warn('Course format site plugin failed to load; opening default course view.', error);
+                await CoreCourseFormatDelegate.openCourse(<CoreCourseAnyCourseData> course, navOptions);
+            }
         } finally {
             loading.dismiss();
         }

@@ -166,11 +166,18 @@ export class CoreCoursesCourseListItemComponent implements OnInit, OnDestroy, On
      */
     openCourse(): void {
         if (this.isEnrolled) {
-            CoreCourseHelper.openCourse(this.course, { params: { isGuest: false } });
+            void CoreCourseHelper.openCourse(this.course, { params: { isGuest: false } }).catch((error) => {
+                if (!this.isDestroyed) {
+                    CoreAlerts.showError(error);
+                }
+            });
         } else {
-            CoreNavigator.navigateToSitePath(
-                `/course/${this.course.id}/summary`,
-                { params: { course: this.course } },
+            void CoreNavigator.navigateToSitePath(`/course/${this.course.id}/summary`, { params: { course: this.course } }).catch(
+                (error) => {
+                    if (!this.isDestroyed) {
+                        CoreAlerts.showError(error);
+                    }
+                },
             );
         }
     }

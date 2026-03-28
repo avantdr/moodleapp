@@ -15,7 +15,7 @@
 #   (CDVPlugin.h / CDVFile.h con import tra virgolette, fix Capacitor 8 SPM: niente <Cordova/...>),
 #   SM_AFHTTPSessionManager.m + SM_AFNetworkReachabilityManager.m (no netinet6/in6.h, Xcode 26);
 # CordovaPluginNetworkInformation/CDVReachability.m (Xcode 26: no netinet6/in6.h);
-# stub Package.swift + Dummy.swift for MediaCapture, Zip, FileTransfer, backgroundAudio.
+# stub Package.swift + Dummy.swift for AdvancedHttp, MediaCapture, Zip, FileTransfer, backgroundAudio.
 
 set -euo pipefail
 
