@@ -300,6 +300,25 @@ export class CoreUrl {
     }
 
     /**
+     * Like sameDomainAndPath, but treats hostnames that differ only by a leading "www." as equivalent.
+     * Needed when moodle.config lists https://www.example.com but the site stores https://example.com (or the reverse).
+     */
+    static sameDomainAndPathIgnoringWww(urlA: string, urlB: string): boolean {
+        if (!urlA.match(/^[^/:.?]*:\/\//)) {
+            urlA = `https://${urlA}`;
+        }
+        if (!urlB.match(/^[^/:.?]*:\/\//)) {
+            urlB = `https://${urlB}`;
+        }
+
+        // Case-insensitive: removeUrlParts only strips lowercase "www.".
+        urlA = urlA.replace(/^(https?:\/\/)www\./i, '$1');
+        urlB = urlB.replace(/^(https?:\/\/)www\./i, '$1');
+
+        return CoreUrl.sameDomainAndPath(urlA, urlB);
+    }
+
+    /**
      * Get the anchor of a URL. If there's more than one they'll all be returned, separated by #.
      * E.g. myurl.com#foo=1#bar=2 will return #foo=1#bar=2.
      *

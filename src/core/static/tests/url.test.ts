@@ -242,6 +242,13 @@ describe('CoreUrl', () => {
         expect(CoreUrl.sameDomainAndPath('https://school.edu/moodle', 'https://school.edu/moodle/about')).toBe(false);
     });
 
+    it('compares domains and paths ignoring www host alias', () => {
+        expect(CoreUrl.sameDomainAndPathIgnoringWww('https://www.school.edu', 'https://school.edu')).toBe(true);
+        expect(CoreUrl.sameDomainAndPathIgnoringWww('https://school.edu', 'https://www.school.edu')).toBe(true);
+        expect(CoreUrl.sameDomainAndPathIgnoringWww('https://WWW.SCHOOL.EDU/moodle', 'https://school.edu/moodle')).toBe(true);
+        expect(CoreUrl.sameDomainAndPathIgnoringWww('https://www.school.edu/moodle', 'https://www.school.edu/moodle/about')).toBe(false);
+    });
+
     it('gets the anchor of a URL', () => {
         expect(CoreUrl.getUrlAnchor('https://school.edu#foo')).toEqual('#foo');
         expect(CoreUrl.getUrlAnchor('https://school.edu#foo#bar')).toEqual('#foo#bar');

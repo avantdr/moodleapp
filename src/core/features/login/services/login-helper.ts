@@ -375,11 +375,15 @@ export class CoreLoginHelperProvider {
     async isSiteUrlAllowed(siteUrl: string, checkSiteFinder = true): Promise<boolean> {
         const sites = await this.getAvailableSites();
 
+        const urlMatchesFixedSite = (fixedUrl: string): boolean =>
+            CoreUrl.sameDomainAndPath(siteUrl, fixedUrl) ||
+            CoreUrl.sameDomainAndPathIgnoringWww(siteUrl, fixedUrl);
+
         if (sites.length) {
             const demoModeSite = this.getDemoModeSiteInfo();
 
-            return sites.some((site) => CoreUrl.sameDomainAndPath(siteUrl, site.url)) ||
-                (!!demoModeSite && CoreUrl.sameDomainAndPath(siteUrl, demoModeSite.url));
+            return sites.some((site) => urlMatchesFixedSite(site.url)) ||
+                (!!demoModeSite && urlMatchesFixedSite(demoModeSite.url));
         } else if (
             CoreConstants.CONFIG.multisitesdisplay === CoreLoginSiteSelectorListMethod.SITE_FINDER &&
             CoreConstants.CONFIG.onlyallowlistedsites &&
@@ -388,7 +392,7 @@ export class CoreLoginHelperProvider {
             // Call the sites finder to validate the site.
             const result = await CoreSites.findSites(siteUrl.replace(/^https?:\/\/|\.\w{2,3}\/?$/g, ''));
 
-            return result && result.some((site) => CoreUrl.sameDomainAndPath(siteUrl, site.url));
+            return !!(result && result.some((site) => urlMatchesFixedSite(site.url)));
         } else {
             // No fixed sites or it uses a non-restrictive sites finder. Allow connecting.
             return true;

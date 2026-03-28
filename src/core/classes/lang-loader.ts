@@ -101,6 +101,19 @@ export class MoodleTranslateLoader implements TranslateLoader {
 
             return await firstValueFrom(request);
         } catch (error) {
+            // Production builds only ship en.json unless lang packs were generated (e.g. update_langpacks.sh).
+            if (lang !== 'en') {
+                this.logger.warn(`Missing /assets/lang/${lang}.json, falling back to en`, error);
+
+                try {
+                    const fallback = Http.get('/assets/lang/en.json') as Observable<TranslationObject>;
+
+                    return await firstValueFrom(fallback);
+                } catch (fallbackError) {
+                    this.logger.error('Error fetching fallback en language file', fallbackError);
+                }
+            }
+
             this.logger.error('Error fetching language file', lang, error);
 
             throw error;

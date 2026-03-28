@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import { Injectable } from '@angular/core';
+import { Capacitor } from '@capacitor/core';
 
 import { FileEntry, DirectoryEntry, Entry, Metadata, IFile } from '@awesome-cordova-plugins/file/ngx';
 
@@ -1312,7 +1313,10 @@ export class CoreFileProvider {
      */
     getWWWAbsolutePath(): string {
         if (window.cordova && cordova.file && cordova.file.applicationDirectory) {
-            return CorePath.concatenatePaths(cordova.file.applicationDirectory, 'www');
+            // Capacitor copies the web bundle to App.app/public (and Android equivalent); classic Cordova used www/.
+            const webRoot = Capacitor.isNativePlatform() ? 'public' : 'www';
+
+            return CorePath.concatenatePaths(cordova.file.applicationDirectory, webRoot);
         }
 
         // Cannot use Cordova to get it, use the WebView URL.

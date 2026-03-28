@@ -1780,8 +1780,9 @@ export class CoreSitesProvider {
             this.logger.debug(`Restore session in site ${siteId}`);
 
             await this.loadSite(siteId);
-        } catch {
-            // No current session.
+        } catch (error) {
+            // Missing site id, DB error, or loadSite rejected (e.g. fixed-site allowlist mismatch — see CoreLoginHelper.isSiteUrlAllowed).
+            this.logger.error('Restore session failed', error);
         }
     }
 
